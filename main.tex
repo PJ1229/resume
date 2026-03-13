@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+% % \raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Peter Kim} \\ \vspace{1pt}
+    \small 734-259-9935 $|$ \href{mailto:pekim@umich.edu}{\underline{pekim@umich.edu}} $|$ 
+    \href{https://pjk1m.com/}{\underline{pjk1m.com}} $|$
+    \href{https://github.com/PJ1229}{\underline{github.com/PJ1229}} $|$
+    \href{https://linkedin.com/in/pjk1m/}{\underline{linkedin.com/in/pjk1m}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Michigan College of Engineering}{Ann Arbor, MI}
+      {Bachelor of Engineering in Computer Engineering, Minor in Mathematics}{Expected Graduation: May 2028}
+
+      \vspace{3pt}
+
+      {\small \textbf{Course Highlights}: EECS 280 (Programming and Introductory Data Structures), EECS 281 (Data Structures and Algorithms), EECS 203 (Discrete Mathematics), EECS 215* (Introduction to Electronic Circuits), EECS 370* (Introduction to Computer Organization)\par}
+      \vspace{-1pt}
+    \resumeSubheading
+      {Wayne State University College of Engineering}{Detroit, MI}
+      {Completed coursework toward Bachelor of Science in Computer Science}{Aug 2024 -- May 2025}
+
+      \vspace{3pt}
+
+      {\small \textbf{Honors \& Research}: Dean's Honors List, University Honors, Research in AI Diffusion Models\par}
+      \vspace{-1pt}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Co-Op / Intern}{Aug 2025 -- Present; May 2025 -- Aug 2025}
+      {Yazaki North America}{Canton, MI}
+      \resumeItemListStart
+        \resumeItem{Reduced engineering drawing review time by 88\% (from \textasciitilde{}128 hours to $<16$ hours) by building an automated PDF markup pipeline using Python and OCR}
+        \resumeItem{Delivered technical results to global stakeholders at Worldwide Engineering, enabling broader adoption of automation practices}
+        \resumeItem{Identified and corrected missing spot tapes in P800 harnesses, driving an estimated \$44,000 cost savings per frame harness}
+        \resumeItem{Built an OpenAI API-powered pipeline to detect parts and descriptions from customer drawings and convert outputs into ABOM-ready data, improving BOM creation speed and consistency}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{Aug 2023 -- Aug 2024}
+      {Plymouth District Library}{Plymouth, MI}
+      \resumeItemListStart
+        \resumeItem{Engineered and maintained a JavaScript-based problem-bank platform, implementing structured data pipelines to improve reliability and access to coding practice content}
+        \resumeItem{Troubleshot and calibrated maker lab systems (3D printers and CAD workflows), resolving hardware/software issues and improving equipment uptime}
+        \resumeItem{Designed technical workshop content on CAD, digital fabrication, and prototyping tools, enabling hands-on engineering skill development for participants}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXTRACURRICULARS-----------
+\section{Extracurriculars}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {V1 Michigan Startup Club}{Ann Arbor, MI}
+      {Member @ University of Michigan}{Sep 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Participate in student startup initiatives, workshops, and founder-focused programming on campus}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Automated Snowplow} $|$ \emph{C++, Arduino, Computer Vision, AutoCAD, Raspberry Pi}}{}
+          \resumeItemListStart
+            \resumeItem{Built an automated snowplow prototype to navigate a 3ft $\times$ 3ft test area by integrating embedded control logic, wiring, and a 3D-printed chassis}
+            \resumeItem{Implemented perception-driven autonomy on Raspberry Pi + camera pipeline for off-road-style navigation tasks, reaching an 85\% detection rate under optimal runs}
+            \resumeItem{Integrated control logic, embedded systems, and robotics modeling to create a reliable autonomy proof-of-concept}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: C/C++, Python, JavaScript, Java, MATLAB} \\
+     \textbf{Robotics, AI \& Tools}{: ROS2, Control Systems, Trajectory Optimization, Robot Modeling, Systems Engineering, PyTorch, Computer Vision, OCR, MediaPipe, Arduino, Raspberry Pi, AutoCAD, Catia, Git/GitHub}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

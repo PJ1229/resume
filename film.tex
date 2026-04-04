@@ -1,0 +1,185 @@
+%-------------------------
+% Resume in Latex
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Peter Kim} \\ \vspace{1pt}
+    \small 734-259-9935 $|$ \href{mailto:pekim@umich.edu}{\underline{pekim@umich.edu}} $|$
+    \href{https://pjk1m.com/}{\underline{pjk1m.com}} $|$
+    \href{https://github.com/PJ1229}{\underline{github.com/PJ1229}} $|$
+    \href{https://linkedin.com/in/pjk1m/}{\underline{linkedin.com/in/pjk1m}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Michigan College of Engineering}{Ann Arbor, MI}
+      {Bachelor of Engineering in Computer Engineering, Minor in Mathematics}{Expected May 2028}
+    \resumeSubheading
+      {Wayne State University}{Detroit, MI}
+      {Coursework in Computer Science $|$ Dean's Honors List, University Honors, AI Research}{Aug 2024 -- May 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {V1 Michigan}{Ann Arbor, MI}
+      {Videographer / Editor / Marketing Team}{Jan 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Produced W26 hype video surpassing 10k views in 48 hours driving 163 Product Studio cohort applications}
+        \resumeItem{Videographed, directed, and edited ongoing startup-focused content for founder events and campus programming; iterated cuts based on stakeholder feedback}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {OOTD -- Fashion App Startup}{Remote}
+      {Head of Marketing \& Content}{Feb 2025 -- Dec 2025}
+      \resumeItemListStart
+        \resumeItem{Hosted open model casting with 50+ applicants; directed 7 shoots with 30+ models each, producing 10+ editorials}
+        \resumeItem{Drove {$>$}500k Instagram impressions through short-form campaigns; acquired {$>$}300 users within 24 hours of launch}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Freelance Filmmaker}{Ann Arbor, MI}
+      {Director / Cinematographer / Editor}{Aug 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Delivered 8+ projects end-to-end for startups, student organizations, and independent artists}
+        \resumeItem{Collaborated directly with founders and creative leads to develop briefs and iterate cuts to stakeholder standard}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {YouTube}{Remote}
+      {Content Creator}{Aug 2017 -- Feb 2019}
+      \resumeItemListStart
+        \resumeItem{Scaled channel to 30k+ subscribers and 15M+ organic views; generated \$12k+ in revenue over 18 months}
+        \resumeItem{Self-produced 615+ videos, developing end-to-end skills in filming, editing, and audience retention from age 13}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Selected Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{LIZETTE -- DECEMBER} $|$ \emph{Direction, Cinematography, Edit}}{Dec 2025}
+          \resumeItemListStart
+            \resumeItem{Directed narrative music video for indie artist LIZETTE's debut single}
+            \resumeItem{Managed full production: storyboarding, shot planning, and directing a male and female lead through performance}
+            \resumeItem{Cut and colored the final film; released across YouTube and Instagram on Dec 14, 2025 alongside the premiere}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{MSU aKDPhi -- New Class Reveal} $|$ \emph{Direction, Cinematography, Edit}}{Nov 2025}
+          \resumeItemListStart
+            \resumeItem{Produced vertical 9:16 reveal trailer for Michigan State University's Alpha Kappa Delta Phi chapter}
+            \resumeItem{Directed 8 on-screen subjects; shot handheld with studio lighting edited with After Effects motion overlays}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{OOTD -- Launch Commercial} $|$ \emph{Direction, Cinematography, Edit}}{Nov 2025}
+          \resumeItemListStart
+            \resumeItem{Directed short launch commercial around a summer picnic concept; graded to emulate color film stock}
+            \resumeItem{Commercial supported launch campaign reaching {$>$}100k organic Instagram impressions within the first week}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{FILSOC Choreography Film} $|$ \emph{Live Event Videography, Edit, Color}}{Jan 2025}
+          \resumeItemListStart
+            \resumeItem{Filmed and edited multi-angle choreography performance for Wayne State University's Filipino cultural organization}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Production}{: Direction, Videography, Storyboarding, Shot Planning, Studio \& Natural Lighting, Casting, Interviews} \\
+     \textbf{Post-Production}{: Adobe Premiere Pro, After Effects, Color Correction, Audio Cleanup, Captioning, Thumbnail Strategy} \\
+     \textbf{Camera}{: Fujifilm XS-20, handheld and stabilized, 4K acquisition} \\
+     \textbf{Distribution}{: Instagram Reels, TikTok, YouTube, Social Analytics, Audience Growth}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

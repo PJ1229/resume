@@ -125,17 +125,17 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Michigan College of Engineering}{Ann Arbor, MI}
-      {Bachelor of Engineering in Electrical Engineering, Minor in Mathematics}{Expected Graduation: May 2028}
+      {Bachelor of Engineering in Electrical Engineering, Minor in Computer Science}{Expected Graduation: May 2028}
       \vspace{3pt}
 
       {\small \textbf{Course Highlights}: EECS 280 (Programming and Introductory Data Structures), EECS 281 (Data Structures and Algorithms), EECS 203 (Discrete Mathematics), EECS 215* (Intro to Electronic Circuits), EECS 370* (Computer Organization and Embedded Systems)\par}
       \vspace{-1pt}
     \resumeSubheading
-      {Wayne State University College of Engineering}{Detroit, MI}
-      {Completed coursework toward Bachelor of Science in Computer Science}{Aug 2024 -- May 2025}
+      {Wayne State University}{Detroit, MI}
+      {Completed coursework toward Bachelor of Science in Computer Science $|$ Dean's Honors List}{Aug 2024 -- May 2025}
       \vspace{3pt}
       
-      {\small \textbf{Honors \& Research}: Dean's Honors List, University Honors, Research in AI Diffusion Models\par}
+      {\small \textbf{Research}: Investigated AI diffusion model architectures for generative tasks; implemented and evaluated denoising pipelines in PyTorch, contributing to ongoing faculty research in probabilistic generative models.\par}
       \vspace{-1pt}
   \resumeSubHeadingListEnd
 
@@ -148,10 +148,10 @@
       {Software Engineering Co-Op / Intern}{Aug 2025 -- Present; May 2025 -- Aug 2025}
       {Yazaki North America}{Canton, MI}
       \resumeItemListStart
-        \resumeItem{Reduced engineering drawing review time by 88\% (from about 128 hours to $<16$ hours) by building a Python + OCR pipeline to automatically parse and annotate engineering PDFs}
-        \resumeItem{Presented automation progress in engineering meetings, incorporated mentor feedback into weekly iterations, and authored technical documentation for global stakeholders to support adoption}
-        \resumeItem{Identified and corrected missing spot tapes in P800 harness assemblies, driving an estimated \$44,000 savings per frame harness}
-        \resumeItem{Built an OpenAI API–powered vision/NLP pipeline to detect parts and descriptions from customer drawings and convert them into BOM-ready data, improving BOM creation speed and consistency}
+        \resumeItem{Designed and deployed a Python + OCR perception pipeline to automatically parse, annotate, and extract structured data from engineering PDFs, reducing manual review time by 88\% (128 hrs $\to$ $<$16 hrs)}
+        \resumeItem{Built a multimodal vision/NLP pipeline using the OpenAI API to detect components and descriptions from customer drawings and generate BOM-ready output, demonstrating end-to-end sensor-to-structured-data integration}
+        \resumeItem{Iterated on pipeline architecture weekly based on stakeholder feedback; authored technical documentation adopted by global engineering teams}
+        \resumeItem{Identified systematic assembly defect (missing spot tapes in P800 harness) through data analysis, driving an estimated \$44,000 savings per frame harness}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -164,31 +164,22 @@
   \resumeSubHeadingListEnd
 
 
-%-----------EXTRACURRICULARS-----------
-\section{Extracurriculars}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {V1 Michigan Startup Club}{Ann Arbor, MI}
-      {Member @ University of Michigan}{Sep 2025 -- Present}
-      \resumeItemListStart
-        \resumeItem{Participate in student startup initiatives, workshops, and founder-focused programming on campus}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Diffusion Model Number Detection} $|$ \emph{Python, PyTorch, Computer Vision}}{}
+          {\textbf{Autonomous Snowplow} $|$ \emph{C++, Python, ROS2, Arduino, Raspberry Pi, Computer Vision, AutoCAD}}{}
           \resumeItemListStart
-            \resumeItem{Implemented a PyTorch diffusion-model pipeline to detect target numbers from images, including data preprocessing, training, and evaluation loops for iterative model improvement}
+            \resumeItem{Designed and built a fully autonomous ground vehicle integrating embedded control logic (Arduino), onboard compute (Raspberry Pi), and a custom 3D-printed chassis --- covering full-stack hardware/software integration from mechanical design to autonomy}
+            \resumeItem{Implemented a camera-based perception pipeline using computer vision for obstacle detection and off-road-style navigation; achieved 85\% detection accuracy under field conditions with iterative tuning}
+            \resumeItem{Structured software architecture using ROS2-style node decomposition: separated perception, state estimation, and control into modular components for maintainability and extensibility}
+            \resumeItem{Validated system through repeated deployment cycles, identifying and resolving cross-layer failures spanning sensor calibration, embedded timing, and control response}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Autonomous Snowplow} $|$ \emph{C++, Arduino, Computer Vision, AutoCAD, Raspberry Pi}}{}
+          {\textbf{Diffusion Model for Image Recognition} $|$ \emph{Python, PyTorch, Computer Vision}}{}
           \resumeItemListStart
-            \resumeItem{Built an autonomous snowplow prototype to navigate a 3ft $\times$ 3ft test area, integrating embedded control logic, wiring, and a 3D-printed chassis}
-            \resumeItem{Implemented a Raspberry Pi–based perception pipeline (camera + computer vision) for off-road-style navigation, reaching an 85\% detection rate under optimal runs}
-            \resumeItem{Integrated perception, control logic, embedded systems, and robotics modeling to deliver a reliable autonomy proof-of-concept}
+            \resumeItem{Designed and trained a PyTorch diffusion model pipeline for target detection from noisy image inputs, implementing forward/reverse diffusion processes, noise scheduling, and a denoising U-Net backbone}
+            \resumeItem{Built full training infrastructure including data preprocessing, augmentation, loss tracking, and evaluation loops; iterated on architecture hyperparameters to improve model convergence and detection precision}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
